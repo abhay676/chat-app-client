@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { Fragment, useEffect, useState } from 'react';
 import { gql, useLazyQuery, useMutation } from '@apollo/client';
 import { Col, Form } from 'react-bootstrap';

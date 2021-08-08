@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { Fragment, useEffect } from 'react';
 import { Row, Button } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';

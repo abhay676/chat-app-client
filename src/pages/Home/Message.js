@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import classNames from 'classnames';
 import Avatar from 'react-avatar';
 import moment from 'moment';
