@@ -43,13 +43,14 @@ const messageReducer = (state, action) => {
       grpIndex = _.findIndex(grpCopy, function (o) {
         return o.selected === true;
       });
+      if (grpIndex !== -1 && grpCopy[grpIndex].groupId === message.groupId) {
+        let newGrp = {
+          ...grpCopy[grpIndex],
+          messages: [message, ...grpCopy[grpIndex].messages],
+        };
 
-      let newGrp = {
-        ...grpCopy[grpIndex],
-        messages: [message, ...grpCopy[grpIndex].messages],
-      };
-
-      grpCopy[grpIndex] = newGrp;
+        grpCopy[grpIndex] = newGrp;
+      }
 
       return {
         ...state,

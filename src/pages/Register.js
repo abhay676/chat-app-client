@@ -53,6 +53,7 @@ export default function Register(props) {
                 onChange={(e) =>
                   setVariables({ ...variables, email: e.target.value })
                 }
+                required
               />
             </Form.Group>
             <Form.Group>
@@ -66,6 +67,7 @@ export default function Register(props) {
                 onChange={(e) =>
                   setVariables({ ...variables, username: e.target.value })
                 }
+                required
               />
             </Form.Group>
             <Form.Group>
@@ -79,6 +81,7 @@ export default function Register(props) {
                 onChange={(e) =>
                   setVariables({ ...variables, password: e.target.value })
                 }
+                required
               />
             </Form.Group>
             <div className="text-center mt-2 mb-2">

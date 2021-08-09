@@ -18,6 +18,7 @@ const NEW_MESSAGE = gql`
       messageId
       from
       createdAt
+      groupId
     }
   }
 `;

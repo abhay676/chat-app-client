@@ -53,8 +53,8 @@ export default function Messages() {
       dispatch({
         type: 'SET_USER_MESSAGES',
         payload: {
-          groupId: selectedGroup.groupId,
-          messages: messagesData.getMessages,
+          groupId: selectedGroup?.groupId,
+          messages: messagesData?.getMessages,
         },
       });
     }
